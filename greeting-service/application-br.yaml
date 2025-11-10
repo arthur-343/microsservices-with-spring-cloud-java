@@ -1,0 +1,17 @@
+spring:
+  port: 8080
+  application:
+    name: greeting-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+greeting-service:
+  greeting: "Ola"
+  defaultValue: "Mundo"
